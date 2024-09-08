@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 4 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* Start Variables  */
+:root {
+  --orange-color: #f49224;
+
+  /* Switch Colors Mode Dark or Light */
+  --front-color-Befor: black;
+  --front-color-After: #ffffff;
+
+  --back-color-After: #d4d4d4;
+  --back-color-befor: #1e1e1e;
+
+  --available-color: #3fd807;
+
+  --txt-h2h4h6-befor: #ffffff;
+  --txt-h2h4h6-after: #000000;
+
+  --txt-h5p-befor: #969494;
+  --txt-h5p-after: #565454;
+
+  --txt-deactive-befor: #565454;
+  --txt-deactive-after: #565454;
+
+  --service-enable: #000000;
+  --service-disable: #9b9999;
+
+  --menu-icon-color-deactive: #dadad7;
+
+  --line-color-befor: #959292;
+
+  --input-color-befor: #c1e0f5;
+
+  --label-color-befor: #969494;
+
+  --btn-color-diasble: #728ecf;
+  --txt-button: #ffffff;
+}
+/* End Variables  */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  caret-color: transparent;
+  background-color: var(--back-color-befor);
+}
+/* Start Media Queries */
+/* Small devices (Portrait phones, 576px and up) */
+@media (min-width: 300px) {
+  .container {
+    width: 360px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: 576px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+/* End Media Queries */
+/* Start Global Component */
+li {
+  list-style: none;
+}
+
+/* End Global Component */

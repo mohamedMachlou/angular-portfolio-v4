@@ -1,0 +1,55 @@
+<!-- /* ////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 4 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */ -->
+<div class="container">
+  <div class="nav">
+    <img
+      class="logo"
+      (click)="switch('about')"
+      src="../../../../assets/images/Logo with Title.svg"
+      alt=""
+    />
+    <ul [ngClass]="this.showMenu() ? 'active-menu' : 'deactive-menu'">
+      <li
+        (click)="switch('about')"
+        [ngClass]="select == 'about' ? 'li-active' : '.li-deactive'"
+      >
+        ABOUT
+      </li>
+      <li
+        (click)="switch('digit')"
+        [ngClass]="select == 'digit' ? 'li-active' : '.li-deactive'"
+      >
+        DIGITAL SOLUTIONS
+      </li>
+      <li
+        (click)="switch('resource')"
+        [ngClass]="select == 'resource' ? 'li-active' : '.li-deactive'"
+      >
+        RESOURCES
+      </li>
+      <li
+        (click)="switch('contact')"
+        [ngClass]="select == 'contact' ? 'li-active' : '.li-deactive'"
+      >
+        CONTACT
+      </li>
+      <li
+        (click)="switch('partners')"
+        [ngClass]="select == 'partners' ? 'li-active' : '.li-deactive'"
+      >
+        PARTNERS
+      </li>
+    </ul>
+    <div *ngIf="!this.showMenu()" (click)="toShowMenu()" class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div *ngIf="this.showMenu()" (click)="toHideMenu()" class="closeMenu">
+      <img src="../../../../assets/images/icon-close.svg" alt="" />
+    </div>
+  </div>
+</div>
