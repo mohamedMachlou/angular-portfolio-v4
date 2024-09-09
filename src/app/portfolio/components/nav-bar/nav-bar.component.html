@@ -11,7 +11,7 @@
       src="../../../../assets/images/Logo with Title.svg"
       alt=""
     />
-    <ul [ngClass]="this.showMenu() ? 'active-menu' : 'deactive-menu'">
+    <ul class="line-menu">
       <li
         (click)="switch('about')"
         [ngClass]="select == 'about' ? 'li-active' : '.li-deactive'"
@@ -52,4 +52,43 @@
       <img src="../../../../assets/images/icon-close.svg" alt="" />
     </div>
   </div>
+
+  <ul
+    [ngClass]="{
+      'column-menu': true,
+      showMenuClass: showMenu(),
+      hideMenuClass: !showMenu()
+    }"
+  >
+    <li
+      (click)="switch('about')"
+      [ngClass]="select == 'about' ? 'li-active' : '.li-deactive'"
+    >
+      ABOUT
+    </li>
+    <li
+      (click)="switch('digit')"
+      [ngClass]="select == 'digit' ? 'li-active' : '.li-deactive'"
+    >
+      DIGITAL SOLUTIONS
+    </li>
+    <li
+      (click)="switch('resource')"
+      [ngClass]="select == 'resource' ? 'li-active' : '.li-deactive'"
+    >
+      RESOURCES
+    </li>
+    <li
+      (click)="switch('contact')"
+      [ngClass]="select == 'contact' ? 'li-active' : '.li-deactive'"
+    >
+      CONTACT
+    </li>
+    <li
+      (click)="switch('partners')"
+      [ngClass]="select == 'partners' ? 'li-active' : '.li-deactive'"
+    >
+      PARTNERS
+    </li>
+  </ul>
 </div>

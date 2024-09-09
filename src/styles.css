@@ -54,25 +54,29 @@ body {
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
   background-color: var(--back-color-befor);
+  overflow-x: hidden;
 }
 /* Start Media Queries */
 /* Small devices (Portrait phones, 576px and up) */
 @media (min-width: 300px) {
   .container {
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
   }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .container {
-    width: 576px;
+    /* width: 576px; */
+    width: 100%;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    /* width: 768px; */
+    width: 100%;
   }
 }
 
