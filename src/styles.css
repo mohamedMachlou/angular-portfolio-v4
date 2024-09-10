@@ -54,7 +54,6 @@ body {
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
   background-color: var(--back-color-befor);
-  overflow-x: hidden;
 }
 /* Start Media Queries */
 /* Small devices (Portrait phones, 576px and up) */
@@ -62,6 +61,7 @@ body {
   .container {
     /* width: 360px; */
     width: 100%;
+    /* overflow-x: hidden; */
   }
 }
 /* Small devices (landscape phones, 576px and up) */
