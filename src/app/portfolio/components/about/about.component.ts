@@ -15,9 +15,15 @@ export class AboutComponent implements OnInit {
   nbWebsites = signal<number>(0);
   nbClients = signal<number>(0);
 
+  //// Manage Services Animation Variables
+  cercleNb = signal<number>(1);
+  serviceInterval = 3000;
+
   ngOnInit(): void {
     this.valuesAnimation();
+    this.servicesAnim();
   }
+  //// Manage Values Animation
   valuesAnimation() {
     if (this.nbClients() < this.nbClientsMax) {
       setInterval(() => {
@@ -32,5 +38,17 @@ export class AboutComponent implements OnInit {
         }
       }, this.interval);
     }
+  }
+
+  //// Manage Services Animation Variables
+  servicesAnim() {
+    setInterval(() => {
+      if (this.cercleNb() <= 5) {
+        this.cercleNb.set(this.cercleNb() + 1);
+      }
+      if (this.cercleNb() == 6) {
+        this.cercleNb.set(1);
+      }
+    }, this.serviceInterval);
   }
 }
