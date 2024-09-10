@@ -44,7 +44,7 @@
   justify-content: space-between;
 }
 .container .about .numbers .number {
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
