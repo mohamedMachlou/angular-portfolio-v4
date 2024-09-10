@@ -54,6 +54,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  color: white;
   caret-color: transparent;
   background-color: var(--back-color-befor);
 }

@@ -5,9 +5,155 @@
 /* /////////////////////////////////////////////////////////// */
 .container .about {
   width: 100%;
-  height: 50vh;
-  background-color: white;
-  margin-top: 20px;
+  /* height: 50vh; */
+  background-color: black;
   position: relative;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  margin-bottom: 50px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.container .about .block {
+  /* background-color: yellowgreen; */
+  width: 60%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid var(--orange-color);
+}
+.container .about .title {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.container .about .para {
+  width: 85%;
+  margin-bottom: 40px;
+}
+.container .about .numbers {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .about .numbers .number {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .about .numbers .number h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+.container .about .numbers .number h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.container .about button {
+  width: 180px;
+  padding: 13px;
+  margin-top: 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--orange-color);
+  background-color: black;
+  border: 2px solid var(--orange-color);
+  transition: 0.8s ease;
+}
+.container .about button:hover {
+  color: white;
+  background-color: var(--orange-color);
+  border: 2px solid transparent;
+}
+
+/* Large devices (desktops, 1220px and down) */
+@media (max-width: 1220px) {
+  .container .about .block {
+    width: 80%;
+    padding: 50px;
+  }
+  .container .about .title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+}
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .container .about .title {
+    font-weight: 700;
+    font-size: 2.7rem;
+    margin-bottom: 40px;
+  }
+  .container .about .para {
+    width: 95%;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 17px;
+  }
+}
+/* Large devices (desktops, 768px and down) */
+@media (max-width: 768px) {
+  .container .about .block {
+    width: 90%;
+    padding: 50px;
+  }
+  .container .about .title {
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+  }
+  .container .about .numbers {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .about .numbers .number {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+  .container .about .numbers .number h2 {
+    font-size: 1.7rem;
+  }
+  .container .about button {
+    width: 180px;
+    padding: 9px;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+}
+/* Large devices (desktops, 590px and down) */
+@media (max-width: 590px) {
+  .container .about .block {
+    width: 96%;
+    padding: 50px 10px;
+  }
+  .container .about .title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .container .about .para {
+    width: 95%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .container .about button:hover {
+    color: var(--orange-color);
+    background-color: black;
+    border: 2px solid var(--orange-color);
+  }
 }
