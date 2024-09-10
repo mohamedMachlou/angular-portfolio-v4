@@ -139,12 +139,12 @@
   background-color: var(--orange-color);
   width: 80px;
   height: 80px;
-  left: -30px;
+  left: -20px;
 }
 .deactive-cercle {
   background-color: #b4b4b8;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   left: -30px;
 }
 .active-service {
@@ -184,6 +184,28 @@
     font-weight: 400;
     font-size: 17px;
   }
+  .container .about .infos {
+    height: 60vh;
+  }
+  .container .about .infos .plus {
+    width: 90%;
+    height: 55vh;
+    border-left-width: 50px;
+  }
+  .active-cercle {
+    width: 60px;
+    height: 60px;
+    left: -7px;
+  }
+  .deactive-cercle {
+    width: 40px;
+    height: 40px;
+    left: -18px;
+  }
+  .infos .plus .service .service-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
 }
 /* Large devices (desktops, 768px and down) */
 @media (max-width: 768px) {
@@ -215,10 +237,29 @@
     font-weight: 500;
     font-size: 1.3rem;
   }
+
+  .container .about .infos {
+    height: 60vh;
+  }
+  .container .about .infos .plus {
+    width: 98%;
+    height: 55vh;
+    border-left-width: 40px;
+  }
+  .active-cercle {
+    width: 60px;
+    height: 60px;
+    left: -10px;
+  }
+  .deactive-cercle {
+    width: 40px;
+    height: 40px;
+    left: -18px;
+  }
   .infos .plus .service .service-title {
     font-weight: 700;
-    font-size: 1.5rem;
-    text-align: end;
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
 /* Large devices (desktops, 590px and down) */
