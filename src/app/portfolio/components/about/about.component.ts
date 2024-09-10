@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
 
   //// Manage Services Animation Variables
   cercleNb = signal<number>(1);
-  serviceInterval = 3000;
+  serviceInterval = 2000;
 
   ngOnInit(): void {
     this.valuesAnimation();
