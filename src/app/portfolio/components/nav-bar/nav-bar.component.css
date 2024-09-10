@@ -14,7 +14,7 @@
   margin: 0;
   border-radius: 6px;
   z-index: 20;
-  position: relative;
+  position: fixed;
 }
 .container .nav .logo {
   height: 80px;
@@ -49,6 +49,7 @@
 .li-deactive {
   padding-left: 5px;
   color: white;
+  border-left: 4px solid transparent;
 }
 .container .nav .column-menu {
   display: none;
