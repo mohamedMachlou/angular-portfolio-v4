@@ -13,6 +13,8 @@
   align-items: center;
   margin: 0;
   border-radius: 6px;
+  z-index: 20;
+  position: relative;
 }
 .container .nav .logo {
   height: 80px;
@@ -73,13 +75,15 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 50px 25px;
+    padding: 50px;
     background-color: #151515;
-    z-index: -7;
+    position: absolute;
+    z-index: 10;
+    box-sizing: border-box;
     transition: 1s ease;
   }
   .showMenuCls {
-    transform: translateY(170px);
+    transform: translateY(184px);
   }
   .hideMenuCls {
     transform: translateY(-200px);
