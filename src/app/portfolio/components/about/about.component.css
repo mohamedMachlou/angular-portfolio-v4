@@ -88,6 +88,8 @@
   background-color: black;
 }
 .about .inter2 {
+  padding: 0;
+  margin: 0;
   background-color: black;
 }
 /* Start Services */
@@ -102,8 +104,12 @@
 .container .about .infos .plus {
   width: 80%;
   height: 79vh;
-  background-color: #fff7f1;
-  border: 3px solid var(--orange-color);
+  background-image: url("../../../../assets/images/back-service2.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #fff7f1; */
+  /* border: 3px solid var(--orange-color); */
+  border: 3px solid black;
   border-left-width: 120px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
@@ -134,12 +140,17 @@
   border-radius: 50%;
   transition: 1s ease;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .active-cercle {
   background-color: var(--orange-color);
   width: 80px;
   height: 80px;
   left: -20px;
+  font-weight: 800;
+  font-size: 30px;
 }
 .deactive-cercle {
   background-color: #b4b4b8;
@@ -149,6 +160,8 @@
 }
 .active-service {
   color: orange;
+  border-radius: 8px;
+  border: 2px solid var(--orange-color);
 }
 .deactive-service {
   color: #b4b4b8;
