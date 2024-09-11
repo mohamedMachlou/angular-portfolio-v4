@@ -102,4 +102,19 @@ li {
   list-style: none;
 }
 
+.inter {
+  width: 100%;
+  background-color: #2f3645;
+}
+.inter img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: black;
+}
+.inter2 {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
 /* End Global Component */
