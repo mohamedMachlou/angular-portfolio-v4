@@ -214,7 +214,7 @@
   }
   .container .about .infos .plus {
     width: 90%;
-    height: 90vh;
+    height: 100vh;
     border-left-width: 50px;
   }
   .active-cercle {
