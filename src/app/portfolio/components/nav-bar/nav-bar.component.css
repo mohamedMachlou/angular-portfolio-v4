@@ -64,6 +64,11 @@
 /* Start Media Queries */
 /* Extra large devices (large desktops, 1200px and down) */
 @media (max-width: 1200px) {
+  .container .nav .line-menu li {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
 }
 /* Small devices (landscape phones, 992px and down) */
 @media (max-width: 992px) {

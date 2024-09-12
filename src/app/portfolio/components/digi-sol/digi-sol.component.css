@@ -146,4 +146,47 @@
     transform: translateY(-340px);
   }
 }
+/* Large devices (desktops, 768px and down) */
+@media (max-width: 768px) {
+  .container .digi-sol .service {
+    width: 500px;
+    height: 610px;
+  }
+  .container .digi-sol .service .img {
+    width: 500px;
+    height: 500px;
+  }
+  .container .digi-sol .service .img .front {
+    width: 500px;
+    height: 500px;
+  }
+  .container .digi-sol .service:hover .img .front {
+    transform: translateY(-340px);
+  }
+}
+/* Large devices (desktops, 450px and down) */
+@media (max-width: 450px) {
+  .container .digi-sol .service {
+    width: 450px;
+    height: 550px;
+  }
+  .container .digi-sol .service .img {
+    width: 450px;
+    height: 450px;
+  }
+  .container .digi-sol .service .img .front {
+    width: 450px;
+    height: 120px;
+    top: 340px;
+    transform: translateY(0px);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .container .digi-sol .service:hover .img .front {
+    transform: translateY(0px);
+  }
+  .container .digi-sol .service .infos h2 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+}
 /* End Media Queries */
