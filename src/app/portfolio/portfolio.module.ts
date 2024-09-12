@@ -4,6 +4,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AboutComponent } from './components/about/about.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
 import { DigiSolComponent } from './components/digi-sol/digi-sol.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { DigiSolComponent } from './components/digi-sol/digi-sol.component';
     AboutComponent,
     CertificatesComponent,
     DigiSolComponent,
+    ContactComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +20,7 @@ import { DigiSolComponent } from './components/digi-sol/digi-sol.component';
     AboutComponent,
     CertificatesComponent,
     DigiSolComponent,
+    ContactComponent,
   ],
 })
 export class PortfolioModule {}

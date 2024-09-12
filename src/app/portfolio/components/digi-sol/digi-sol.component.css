@@ -5,6 +5,7 @@
 /* /////////////////////////////////////////////////////////// */
 .container .digi-sol {
   width: 100%;
+  padding-bottom: 40px;
   background-color: #fff6dc;
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +16,7 @@
   width: 1300px;
   height: 350px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: white;
   color: black;
   display: flex;
