@@ -5,26 +5,40 @@
 /* /////////////////////////////////////////////////////////// */
 .container .contact {
   width: 100%;
-  height: 200vh;
+  height: 130vh;
   background-color: #efefee;
   color: black;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  z-index: 7;
+  overflow: hidden;
+}
+.container .contact::before {
+  content: "";
+  border-width: 640px;
+  border-style: solid;
+  border-color: white transparent transparent white;
+  position: absolute;
+  left: 0px;
+  z-index: 15;
 }
 .container .contact form {
   width: 700px;
   /* height: 1000px; */
   background-color: white;
-  margin-top: 50px;
+  margin-top: 150px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
+  /* display: none; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 30;
 }
 .container .contact form .form-group {
   width: 550px;
@@ -87,4 +101,56 @@
   outline: none;
   color: white;
   background-color: var(--orange-color);
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .container .contact form {
+    width: 600px;
+  }
+  .container .contact form .form-group {
+    width: 490px;
+  }
+}
+/* Medium devices (tablets, 576px and down) */
+@media (max-width: 576px) {
+  .container .contact form {
+    width: 500px;
+  }
+  .container .contact form .form-group {
+    width: 440px;
+  }
+}
+/* Medium devices (tablets, 400px and down) */
+@media (max-width: 450px) {
+  .container .contact form {
+    width: 410px;
+  }
+  .container .contact form .form-group {
+    width: 370px;
+  }
+  .container .contact form .form-group input {
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--orange-color);
+  }
+  .container .contact form .form-group input:focus {
+    border: none;
+    border-bottom: 2px solid #96c291;
+  }
+  .container .contact form .form-group select {
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--orange-color);
+  }
+  .container .contact form .form-group button {
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
