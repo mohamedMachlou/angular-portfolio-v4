@@ -117,4 +117,71 @@ li {
   margin: 0;
   background-color: black;
 }
+
+/* Start Header */
+.container .myHeader {
+  width: 100%;
+  height: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  background-color: #2e3545;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+}
+.container .myHeader .logo {
+  width: 150px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url("./assets/images/my-header.svg");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transform: rotate(-10deg);
+}
+.container .myHeader .title {
+  font-weight: 500;
+  font-size: 40px;
+  border-bottom: 12px solid #f74d19;
+}
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .container .digit-sol .infos .service {
+    width: 85%;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  /* Start Header */
+  .container .myHeader .logo {
+    height: 80px;
+    transform: rotate(-14deg);
+  }
+  .container .myHeader .title {
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: 10px solid #f74d19;
+  }
+  /* End Header */
+}
+/* Large devices (desktops, 450px and down) */
+@media (max-width: 450px) {
+  .container .digit-sol .infos .service {
+    width: 95%;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  /* Start Header */
+  .container .myHeader .logo {
+    height: 80px;
+    transform: rotate(-14deg);
+  }
+  .container .myHeader .title {
+    font-size: 20px;
+  }
+  /* End Header */
+}
+/* End Header */
+
 /* End Global Component */

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DigiSolComponent } from './digi-sol.component';
+import { DigitSolComponent } from './digit-sol.component';
 
-describe('DigiSolComponent', () => {
-  let component: DigiSolComponent;
-  let fixture: ComponentFixture<DigiSolComponent>;
+describe('DigitSolComponent', () => {
+  let component: DigitSolComponent;
+  let fixture: ComponentFixture<DigitSolComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DigiSolComponent]
+      declarations: [DigitSolComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DigiSolComponent);
+    fixture = TestBed.createComponent(DigitSolComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

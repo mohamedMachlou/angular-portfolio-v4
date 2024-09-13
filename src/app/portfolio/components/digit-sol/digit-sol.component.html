@@ -1,0 +1,65 @@
+<div class="container">
+  <!-- Start Header -->
+  <div class="myHeader">
+    <div class="logo"></div>
+    <div class="title">DIGITAL SOLUTIONS</div>
+  </div>
+  <!-- End Header -->
+  <div class="digit-sol">
+    <div class="infos">
+      <div class="service">
+        <div
+          [ngClass]="{
+            'active-service': this.cercleNb() == 1,
+            'deactive-service': this.cercleNb() != 1
+          }"
+        >
+          Website Design & Development
+        </div>
+      </div>
+      <div class="service">
+        <div
+          [ngClass]="{
+            'active-service': this.cercleNb() == 2,
+            'deactive-service': this.cercleNb() != 2
+          }"
+        >
+          Search Engine Optimization
+        </div>
+      </div>
+      <div class="service">
+        <div
+          [ngClass]="{
+            'active-service': this.cercleNb() == 3,
+            'deactive-service': this.cercleNb() != 3
+          }"
+        >
+          Facebook Advertising Services
+        </div>
+      </div>
+      <div class="service">
+        <div
+          [ngClass]="{
+            'active-service': this.cercleNb() == 4,
+            'deactive-service': this.cercleNb() != 4
+          }"
+        >
+          Google Business Profile
+        </div>
+      </div>
+      <div class="service">
+        <div
+          [ngClass]="{
+            'active-service': this.cercleNb() == 5,
+            'deactive-service': this.cercleNb() != 5
+          }"
+        >
+          Contact form tracking
+        </div>
+      </div>
+    </div>
+    <div class="inter inter2">
+      <img src="../../../../assets/images/gray-biege.svg" alt="" />
+    </div>
+  </div>
+</div>

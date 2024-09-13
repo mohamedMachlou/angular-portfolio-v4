@@ -3,7 +3,11 @@
 /* ////// Portfolio Version 4 Created by Mohamed Machlou ///// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
-.container .digi-sol {
+.container .myHeader {
+  background-color: #fff6dc;
+  color: black;
+}
+.container .industries {
   width: 100%;
   padding-bottom: 40px;
   background-color: #fff6dc;
@@ -12,11 +16,11 @@
   justify-content: center;
   align-items: center;
 }
-.container .digi-sol .service {
+.container .industries .service {
   width: 1300px;
   height: 350px;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   background-color: white;
   color: black;
   display: flex;
@@ -28,24 +32,24 @@
   transition: 2s ease;
   overflow: hidden;
 }
-.container .digi-sol .service:hover {
+.container .industries .service:hover {
   border-left: 30px solid var(--orange-color);
 }
-.container .digi-sol .service .img {
+.container .industries .service .img {
   width: 350px;
   height: 350px;
   padding: 10px;
   position: relative;
   /* z-index: 2; */
 }
-.container .digi-sol .service .img img {
+.container .industries .service .img img {
   width: 350px;
   height: 100%;
 }
-.container .digi-sol .service .img .front {
+.container .industries .service .img .front {
   width: 350px;
   height: 350px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   /* z-index: 4; */
   top: 350px;
@@ -56,10 +60,10 @@
   justify-content: center;
   align-items: center;
 }
-.container .digi-sol .service:hover .img .front {
+.container .industries .service:hover .img .front {
   transform: translateY(-340px);
 }
-.container .digi-sol .service .img .front button {
+.container .industries .service .img .front button {
   width: 200px;
   height: 50px;
   background-color: var(--orange-color);
@@ -68,16 +72,16 @@
   font-size: 25px;
   cursor: pointer;
 }
-.container .digi-sol .service .img .front button:hover {
+.container .industries .service .img .front button:hover {
   background-color: transparent;
   color: var(--orange-color);
   border: 1px solid var(--orange-color);
 }
 
-.container .digi-sol .service .infos {
+.container .industries .service .infos {
   width: 60%;
 }
-.container .digi-sol .service .infos h2 {
+.container .industries .service .infos h2 {
   width: 160px;
   font-weight: 800;
   font-size: 40px;
@@ -85,24 +89,28 @@
   margin-left: 20px;
   border-bottom: 15px solid var(--orange-color);
 }
-.container .digi-sol .service .infos p {
+.container .industries .service .infos p {
   display: flex;
   font-weight: 600;
   font-size: 14px;
   line-height: 25px;
   padding: 20px;
 }
+.inter {
+  width: 100%;
+  background-color: white;
+}
 
 /* Start Media Queries */
 /* Large devices (desktops, 1200px and down) */
 @media (max-width: 1200px) {
-  .container .digi-sol .service {
+  .container .industries .service {
     width: 1100px;
   }
 }
 /* Large devices (desktops, 992px and down) */
 @media (max-width: 992px) {
-  .container .digi-sol .service {
+  .container .industries .service {
     width: 550px;
     height: 650px;
     margin-top: 20px;
@@ -113,23 +121,23 @@
     align-items: center;
     border-left: 30px solid transparent;
   }
-  .container .digi-sol .service .infos h2 {
+  .container .industries .service .infos h2 {
     padding: 20px;
     margin: auto;
   }
-  .container .digi-sol .service .infos p {
+  .container .industries .service .infos p {
     display: none;
   }
-  .container .digi-sol .service .img {
+  .container .industries .service .img {
     width: 550px;
     height: 550px;
     padding: 0px;
     position: relative;
   }
-  .container .digi-sol .service .img img {
+  .container .industries .service .img img {
     width: 100%;
   }
-  .container .digi-sol .service .img .front {
+  .container .industries .service .img .front {
     width: 550px;
     height: 550px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -142,51 +150,57 @@
     justify-content: center;
     align-items: center;
   }
-  .container .digi-sol .service:hover .img .front {
+  .container .industries .service:hover .img .front {
     transform: translateY(-340px);
   }
 }
 /* Large devices (desktops, 768px and down) */
 @media (max-width: 768px) {
-  .container .digi-sol .service {
+  .container .industries .service {
     width: 500px;
     height: 610px;
   }
-  .container .digi-sol .service .img {
+  .container .industries .service .img {
     width: 500px;
     height: 500px;
   }
-  .container .digi-sol .service .img .front {
+  .container .industries .service .img .front {
     width: 500px;
     height: 500px;
   }
-  .container .digi-sol .service:hover .img .front {
+  .container .industries .service:hover .img .front {
     transform: translateY(-340px);
   }
 }
 /* Large devices (desktops, 450px and down) */
 @media (max-width: 450px) {
-  .container .digi-sol .service {
-    width: 450px;
+  .container .industries .service {
+    width: 420px;
     height: 550px;
+    border-left: 30px solid var(--orange-color);
   }
-  .container .digi-sol .service .img {
-    width: 450px;
-    height: 450px;
+  .container .industries .service .img {
+    width: 420px;
+    height: 420px;
   }
-  .container .digi-sol .service .img .front {
-    width: 450px;
+  .container .industries .service .img .front {
+    width: 420px;
     height: 120px;
-    top: 340px;
+    top: 320px;
     transform: translateY(0px);
     background-color: rgba(0, 0, 0, 0.9);
   }
-  .container .digi-sol .service:hover .img .front {
+  .container .industries .service:hover .img .front {
     transform: translateY(0px);
   }
-  .container .digi-sol .service .infos h2 {
+  .container .industries .service .infos h2 {
     font-weight: 700;
     font-size: 35px;
+  }
+  .container .industries .service .img .front button {
+    background-color: transparent;
+    color: var(--orange-color);
+    border: 1px solid var(--orange-color);
   }
 }
 /* End Media Queries */
