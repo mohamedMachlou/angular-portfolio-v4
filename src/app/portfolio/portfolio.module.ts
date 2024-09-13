@@ -6,6 +6,7 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { IndustriesComponent } from './components/industries/industries.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DigitSolComponent } from './components/digit-sol/digit-sol.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { DigitSolComponent } from './components/digit-sol/digit-sol.component';
     ContactComponent,
     DigitSolComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   exports: [
     NavBarComponent,
     AboutComponent,

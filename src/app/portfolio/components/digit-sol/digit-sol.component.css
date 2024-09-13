@@ -20,7 +20,7 @@
 }
 .active-service {
   color: var(--orange-color);
-  color: #f74d19;
+  /* color: #f74d19; */
 }
 .deactive-service {
   color: #3a4152;
