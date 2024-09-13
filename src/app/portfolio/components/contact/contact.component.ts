@@ -17,7 +17,26 @@ export class ContactComponent {
       Validators.required,
       Validators.minLength(3),
       Validators.maxLength(40),
-      Validators.pattern(),
+      Validators.pattern('[a-zA-Z]+'),
+    ]),
+    lastname: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.maxLength(40),
+      Validators.pattern('[a-zA-Z]+'),
     ]),
   });
+
+  get firstname() {
+    return this.form.get('firstname');
+  }
+  get lastname() {
+    return this.form.get('lastname');
+  }
+
+  // submit method
+
+  submit() {
+    console.log(this.firstname?.errors?.['minlength']);
+  }
 }

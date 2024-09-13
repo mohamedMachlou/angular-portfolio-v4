@@ -10,15 +10,43 @@
     <div class="title">CONTACT</div>
   </div>
   <!-- End Header -->
-  <div class="contact"> 
-    <form>
+  <div class="contact">
+    <form [formGroup]="form" (ngSubmit)="submit()">
       <div class="form-group">
         <label for="firstname">First Name<span>*</span> </label>
-        <input id="firstname" type="text" />
+        <input formControlName="firstname" id="firstname" type="text" />
+        <div *ngIf="firstname?.invalid && firstname?.touched">
+          <div *ngIf="firstname?.errors?.['required']">
+            First name is required.
+          </div>
+          <div *ngIf="firstname?.errors?.['minlength']">
+            First name must be at least 3 characters long.
+          </div>
+          <div *ngIf="firstname?.errors?.['maxlength']">
+            First name must be at most 40 characters long.
+          </div>
+          <div *ngIf="firstname?.errors?.['pattern']">
+            First name can only contain alphabetic characters and spaces.
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="lastname">Last Name<span>*</span> </label>
-        <input id="lastname" type="text" />
+        <input formControlName="lastname" id="lastname" type="text" />
+        <div *ngIf="lastname?.invalid && lastname?.touched">
+          <div *ngIf="lastname?.errors?.['required']">
+            First name is required.
+          </div>
+          <div *ngIf="lastname?.errors?.['minlength']">
+            First name must be at least 3 characters long.
+          </div>
+          <div *ngIf="lastname?.errors?.['maxlength']">
+            First name must be at most 40 characters long.
+          </div>
+          <div *ngIf="lastname?.errors?.['pattern']">
+            First name can only contain alphabetic characters and spaces.
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="companyname"> Company Name<span>*</span> </label>
