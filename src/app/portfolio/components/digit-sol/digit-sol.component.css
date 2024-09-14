@@ -12,14 +12,17 @@
 }
 .container .digit-sol .infos .service {
   width: 60%;
-  height: 60px;
+  height: 80px;
   font-weight: 700;
   font-size: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .active-service {
+  padding: 10px;
   color: var(--orange-color);
+  outline: none;
   /* color: #f74d19; */
 }
 .deactive-service {
