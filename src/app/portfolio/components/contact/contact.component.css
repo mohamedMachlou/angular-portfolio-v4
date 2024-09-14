@@ -282,7 +282,7 @@
   .container .contact form .form-group input {
     font-weight: 400;
     font-size: 15px;
-    border: none;
+    border: 1px solid var(--orange-color);
     outline: none;
     /* border-bottom: 2px solid var(--orange-color); */
   }
@@ -293,7 +293,7 @@
   .container .contact form .form-group select {
     font-weight: 400;
     font-size: 15px;
-    border: none;
+    border: 1px solid var(--orange-color);
     outline: none;
     border-bottom: 2px solid var(--orange-color);
   }
