@@ -120,4 +120,22 @@ export class ContactComponent {
         }
       );
   }
+
+  //// Start Social Media
+  tofacebook() {
+    window.open('https://www.facebook.com/machlouservices/', '_blank');
+  }
+  toinstagram() {
+    window.open('https://www.instagram.com/machlou_services/', '_blank');
+  }
+  toyoutube() {
+    window.open('https://www.youtube.com/@MoroccoWebDeveloper/', '_blank');
+  }
+  tolinkedin() {
+    window.open('https://www.linkedin.com/in/machloumohamed/', '_blank');
+  }
+  totiktok() {
+    window.open('https://www.tiktok.com/@machlouservices/', '_blank');
+  }
+  //// End Social Media
 }
