@@ -130,7 +130,7 @@ li {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 20;
+  z-index: 12;
 }
 .container .myHeader .logo {
   width: 150px;

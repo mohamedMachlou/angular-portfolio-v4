@@ -4,89 +4,95 @@
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */ -->
 <div class="container">
-  <div class="nav">
-    <img
-      class="logo"
-      (click)="switch('about')"
-      src="../../../../assets/images/Logo with Title.svg"
-      alt=""
-    />
-    <ul class="line-menu">
-      <li
-        (click)="switch('about')"
-        [ngClass]="select == 'about' ? 'li-active' : 'li-deactive'"
-      >
-        ABOUT
-      </li>
-      <li
-        (click)="switch('digit')"
-        [ngClass]="select == 'digit' ? 'li-active' : 'li-deactive'"
-      >
-        DIGITAL SOLUTIONS
-      </li>
-      <li
-        (click)="switch('industries')"
-        [ngClass]="select == 'industries' ? 'li-active' : 'li-deactive'"
-      >
-        INDUSTRIES
-      </li>
-      <li
-        (click)="switch('contact')"
-        [ngClass]="select == 'contact' ? 'li-active' : 'li-deactive'"
-      >
-        CONTACT
-      </li>
-      <li
-        (click)="switch('partners')"
-        [ngClass]="select == 'partners' ? 'li-active' : 'li-deactive'"
-      >
-        PARTNERS
-      </li>
-    </ul>
-
-    <ul
-      [ngClass]="{
-        'column-menu': true,
-        showMenuCls: this.showMenu(),
-        hideMenuCls: !this.showMenu()
-      }"
-    >
-      <li
-        (click)="switch('about')"
-        [ngClass]="select == 'about' ? 'li-active' : 'li-deactive'"
-      >
-        ABOUT
-      </li>
-      <li
-        (click)="switch('digit')"
-        [ngClass]="select == 'digit' ? 'li-active' : 'li-deactive'"
-      >
-        DIGITAL SOLUTIONS
-      </li>
-      <li
-        (click)="switch('industries')"
-        [ngClass]="select == 'industries' ? 'li-active' : 'li-deactive'"
-      >
-        INDUSTRIES
-      </li>
-      <li
-        (click)="switch('contact')"
-        [ngClass]="select == 'contact' ? 'li-active' : 'li-deactive'"
-      >
-        CONTACT
-      </li>
-      <li
-        (click)="switch('partners')"
-        [ngClass]="select == 'partners' ? 'li-active' : 'li-deactive'"
-      >
-        PARTNERS
-      </li>
-    </ul>
-    <div *ngIf="!this.showMenu()" (click)="toShowMenu()" class="menu">
-      <img src="../../../../assets/images/icon-menu.svg" alt="" />
+  <div class="mynav">
+    <div class="head">
+      <div class="email">medmachlou&#64;gmail.com</div>
+      <button>REQUEST A CONSULTATION</button>
     </div>
-    <div *ngIf="this.showMenu()" (click)="toHideMenu()" class="closeMenu">
-      <img src="../../../../assets/images/icon-close.svg" alt="" />
+    <div class="nav">
+      <img
+        class="logo"
+        (click)="switch('about')"
+        src="../../../../assets/images/Logo with Title.svg"
+        alt=""
+      />
+      <ul class="line-menu">
+        <li
+          (click)="switch('about')"
+          [ngClass]="select == 'about' ? 'li-active' : 'li-deactive'"
+        >
+          ABOUT
+        </li>
+        <li
+          (click)="switch('digit')"
+          [ngClass]="select == 'digit' ? 'li-active' : 'li-deactive'"
+        >
+          DIGITAL SOLUTIONS
+        </li>
+        <li
+          (click)="switch('industries')"
+          [ngClass]="select == 'industries' ? 'li-active' : 'li-deactive'"
+        >
+          INDUSTRIES
+        </li>
+        <li
+          (click)="switch('contact')"
+          [ngClass]="select == 'contact' ? 'li-active' : 'li-deactive'"
+        >
+          CONTACT
+        </li>
+        <li
+          (click)="switch('partners')"
+          [ngClass]="select == 'partners' ? 'li-active' : 'li-deactive'"
+        >
+          PARTNERS
+        </li>
+      </ul>
+
+      <ul
+        [ngClass]="{
+          'column-menu': true,
+          showMenuCls: this.showMenu(),
+          hideMenuCls: !this.showMenu()
+        }"
+      >
+        <li
+          (click)="switch('about')"
+          [ngClass]="select == 'about' ? 'li-active' : 'li-deactive'"
+        >
+          ABOUT
+        </li>
+        <li
+          (click)="switch('digit')"
+          [ngClass]="select == 'digit' ? 'li-active' : 'li-deactive'"
+        >
+          DIGITAL SOLUTIONS
+        </li>
+        <li
+          (click)="switch('industries')"
+          [ngClass]="select == 'industries' ? 'li-active' : 'li-deactive'"
+        >
+          INDUSTRIES
+        </li>
+        <li
+          (click)="switch('contact')"
+          [ngClass]="select == 'contact' ? 'li-active' : 'li-deactive'"
+        >
+          CONTACT
+        </li>
+        <li
+          (click)="switch('partners')"
+          [ngClass]="select == 'partners' ? 'li-active' : 'li-deactive'"
+        >
+          PARTNERS
+        </li>
+      </ul>
+      <div *ngIf="!this.showMenu()" (click)="toShowMenu()" class="menu">
+        <img src="../../../../assets/images/icon-menu.svg" alt="" />
+      </div>
+      <div *ngIf="this.showMenu()" (click)="toHideMenu()" class="closeMenu">
+        <img src="../../../../assets/images/icon-close.svg" alt="" />
+      </div>
     </div>
   </div>
 </div>

@@ -3,6 +3,38 @@
 /* ////// Portfolio Version 4 Created by Mohamed Machlou ///// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
+.container .mynav {
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+}
+.container .head {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .head .email {
+  font-weight: 800;
+  font-size: 40px;
+  color: beige;
+}
+.container .head button {
+  width: 400px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-weight: 800;
+  font-size: 25px;
+  color: beige;
+  background-color: orangered;
+  transform: rotate(5deg);
+  cursor: pointer;
+}
 .container .nav {
   width: 100%;
   height: 60px;
@@ -12,9 +44,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  border-radius: 6px;
-  z-index: 40;
-  position: fixed;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .container .nav .logo {
   height: 90px;
@@ -70,6 +101,24 @@
     margin-right: 10px;
   }
 }
+@media (max-width: 1100px) {
+  .container .head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .head button {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .container .head .email {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
 /* Small devices (landscape phones, 992px and down) */
 @media (max-width: 992px) {
   .container .nav .line-menu {
@@ -85,15 +134,15 @@
     padding: 50px;
     background-color: #151515;
     position: absolute;
-    z-index: 10;
+    z-index: -10;
     box-sizing: border-box;
     transition: 1s ease;
   }
   .showMenuCls {
-    transform: translateY(184px);
+    transform: translateY(180px);
   }
   .hideMenuCls {
-    transform: translateY(-200px);
+    transform: translateY(-400px);
   }
   .container .nav .column-menu li {
     font-weight: 500;
@@ -129,8 +178,54 @@
     width: 25px;
   }
 }
+/* Small devices (landscape phones, Width: 992px and Height: 450px) */
+@media (max-width: 992px) and (max-height: 450px) {
+  .container .head {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .head .email {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .container .head button {
+    width: 250px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 45px;
+    transform: rotate(6deg);
+  }
+}
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  .container .head .email {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .container .head button {
+    width: 350px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 25px;
+  }
+}
 /* Small devices (landscape phones, 500px and down) */
 @media (max-width: 500px) {
+  .container .head .email {
+    font-size: 25px;
+  }
+  .container .head button {
+    width: 300px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+  }
   .container .nav .logo {
     height: 50px;
     margin-left: 10px;
