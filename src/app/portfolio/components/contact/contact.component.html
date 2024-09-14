@@ -14,8 +14,25 @@
     <form [formGroup]="form" (ngSubmit)="submit()">
       <div class="form-group">
         <label for="firstname">First Name<span>*</span> </label>
-        <input formControlName="firstname" id="firstname" type="text" />
-        <div *ngIf="firstname?.invalid && firstname?.touched">
+        <input
+          [ngClass]="{
+            inputvalid: firstname?.valid && firstname?.touched,
+            inputinvalid: firstname?.invalid && firstname?.touched
+          }"
+          formControlName="firstname"
+          id="firstname"
+          type="text"
+        />
+        <div
+          class="alert-success"
+          *ngIf="firstname?.valid && firstname?.touched"
+        >
+          valide.
+        </div>
+        <div
+          class="alert-danger"
+          *ngIf="firstname?.invalid && firstname?.touched"
+        >
           <div *ngIf="firstname?.errors?.['required']">
             First name is required.
           </div>
@@ -32,53 +49,197 @@
       </div>
       <div class="form-group">
         <label for="lastname">Last Name<span>*</span> </label>
-        <input formControlName="lastname" id="lastname" type="text" />
-        <div *ngIf="lastname?.invalid && lastname?.touched">
+        <input
+          [ngClass]="{
+            inputvalid: lastname?.valid && lastname?.touched,
+            inputinvalid: lastname?.invalid && lastname?.touched
+          }"
+          formControlName="lastname"
+          id="lastname"
+          type="text"
+        />
+        <div class="alert-success" *ngIf="lastname?.valid && lastname?.touched">
+          valide.
+        </div>
+        <div
+          class="alert-danger"
+          *ngIf="lastname?.invalid && lastname?.touched"
+        >
           <div *ngIf="lastname?.errors?.['required']">
-            First name is required.
+            Last name is required.
           </div>
           <div *ngIf="lastname?.errors?.['minlength']">
-            First name must be at least 3 characters long.
+            Last name must be at least 3 characters long.
           </div>
           <div *ngIf="lastname?.errors?.['maxlength']">
-            First name must be at most 40 characters long.
+            Last name must be at most 40 characters long.
           </div>
           <div *ngIf="lastname?.errors?.['pattern']">
-            First name can only contain alphabetic characters and spaces.
+            Last name can only contain alphabetic characters and spaces.
           </div>
         </div>
       </div>
       <div class="form-group">
-        <label for="companyname"> Company Name<span>*</span> </label>
-        <input id="companyname" type="text" />
+        <label for="companyname">Company Name<span>*</span> </label>
+        <input
+          [ngClass]="{
+            inputvalid: companyname?.valid && companyname?.touched,
+            inputinvalid: companyname?.invalid && companyname?.touched
+          }"
+          formControlName="companyname"
+          id="companyname"
+          type="text"
+        />
+        <div
+          class="alert-success"
+          *ngIf="companyname?.valid && companyname?.touched"
+        >
+          valide.
+        </div>
+        <div
+          class="alert-danger"
+          *ngIf="companyname?.invalid && companyname?.touched"
+        >
+          <div *ngIf="companyname?.errors?.['required']">
+            Company Name is required.
+          </div>
+          <div *ngIf="companyname?.errors?.['minlength']">
+            Company Name must be at least 3 characters long.
+          </div>
+          <div *ngIf="companyname?.errors?.['maxlength']">
+            Company Name must be at most 40 characters long.
+          </div>
+          <div *ngIf="companyname?.errors?.['pattern']">
+            Company Name can only contain alphabetic characters and spaces.
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="option">Option:</label>
+        <label for="option">Option<span>*</span></label>
         <select id="option" formControlName="option">
-          <option value=""></option>
-          <!-- <option *ngFor="let option of options" [value]="option"> -->
-          <option>option 1</option>
-          <option>option 2</option>
-          <option>option 3</option>
-          <option>option 4</option>
+          <option value="" disabled selected>Choose your option</option>
+          <option *ngFor="let option of options" [value]="option">
+            {{ option }}
+          </option>
         </select>
       </div>
       <div class="form-group">
         <label for="phonenumber">Phone Number<span>*</span> </label>
-        <input id="phonenumber" type="text" />
+        <input
+          [ngClass]="{
+            inputvalid: phonenumber?.valid && phonenumber?.touched,
+            inputinvalid: phonenumber?.invalid && phonenumber?.touched
+          }"
+          formControlName="phonenumber"
+          id="phonenumber"
+          type="text"
+        />
+        <div
+          class="alert-success"
+          *ngIf="phonenumber?.valid && phonenumber?.touched"
+        >
+          valide.
+        </div>
+        <div
+          class="alert-danger"
+          *ngIf="phonenumber?.invalid && phonenumber?.touched"
+        >
+          <div *ngIf="phonenumber?.errors?.['required']">
+            Phone Number is required.
+          </div>
+          <div *ngIf="phonenumber?.errors?.['minlength']">
+            Phone Number must be at least 9 characters long.
+          </div>
+          <div *ngIf="phonenumber?.errors?.['maxlength']">
+            Phone Number must be at most 15 characters long.
+          </div>
+          <div *ngIf="phonenumber?.errors?.['pattern']">
+            Phone Number can only contain numbers.
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="email">Email<span>*</span> </label>
-        <input id="email" type="text" />
+        <input
+          [ngClass]="{
+            inputvalid: email?.valid && email?.touched,
+            inputinvalid: email?.invalid && email?.touched
+          }"
+          formControlName="email"
+          id="email"
+          type="text"
+        />
+        <div class="alert-success" *ngIf="email?.valid && email?.touched">
+          valide.
+        </div>
+        <div class="alert-danger" *ngIf="email?.invalid && email?.touched">
+          <div *ngIf="email?.errors?.['required']">Email is required.</div>
+          <div *ngIf="email?.errors?.['minlength']">
+            Email must be at least 6 characters long.
+          </div>
+          <div *ngIf="email?.errors?.['maxlength']">
+            Email must be at most 40 characters long.
+          </div>
+          <div *ngIf="email?.errors?.['pattern']">
+            Email must be for example : example&#64;name.com.
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="state">State<span>*</span> </label>
-        <input id="state" type="text" />
+        <input
+          [ngClass]="{
+            inputvalid: state?.valid && state?.touched,
+            inputinvalid: state?.invalid && state?.touched
+          }"
+          formControlName="state"
+          id="state"
+          type="text"
+        />
+        <div class="alert-success" *ngIf="state?.valid && state?.touched">
+          valide.
+        </div>
+        <div class="alert-danger" *ngIf="state?.invalid && state?.touched">
+          <div *ngIf="state?.errors?.['required']">State is required.</div>
+          <div *ngIf="state?.errors?.['minlength']">
+            State must be at least 2 characters long.
+          </div>
+          <div *ngIf="state?.errors?.['maxlength']">
+            State must be at most 35 characters long.
+          </div>
+          <div *ngIf="state?.errors?.['pattern']">
+            State must be only contain alphabetic characters and spaces.
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="message">Message<span>*</span> </label>
-        <input id="message" type="text" />
+        <input
+          [ngClass]="{
+            inputvalid: message?.valid && message?.touched,
+            inputinvalid: message?.invalid && message?.touched
+          }"
+          formControlName="message"
+          id="message"
+          type="text"
+        />
+        <div class="alert-success" *ngIf="message?.valid && message?.touched">
+          valide.
+        </div>
+        <div class="alert-danger" *ngIf="message?.invalid && message?.touched">
+          <div *ngIf="message?.errors?.['required']">Message is required.</div>
+          <div *ngIf="message?.errors?.['minlength']">
+            Message must be at least 5 characters long.
+          </div>
+          <div *ngIf="message?.errors?.['maxlength']">
+            Message must be at most 1000 characters long.
+          </div>
+          <div *ngIf="message?.errors?.['pattern']">
+            Message must be only contain alphabetic characters and spaces.
+          </div>
+        </div>
       </div>
+
       <div class="form-group">
         <button>GET IN TOUCH WITH US</button>
       </div>
