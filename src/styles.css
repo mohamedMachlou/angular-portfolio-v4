@@ -133,18 +133,18 @@ li {
   z-index: 12;
 }
 .container .myHeader .logo {
-  width: 150px;
-  height: 90px;
+  width: 100px;
+  height: 40px;
   border-radius: 20px;
-  background-image: url("./assets/images/my-header.svg");
+  background-image: url("./assets/images/myHeadNewback.svg");
   background-repeat: no-repeat;
   background-size: 150px;
-  transform: rotate(-10deg);
+  transform: rotate(10deg);
 }
 .container .myHeader .title {
   font-weight: 500;
   font-size: 40px;
-  border-bottom: 12px solid #f74d19;
+  border-bottom: 4px solid #f74d19;
 }
 /* Large devices (desktops, 992px and down) */
 @media (max-width: 992px) {
@@ -155,13 +155,14 @@ li {
   }
   /* Start Header */
   .container .myHeader .logo {
-    height: 80px;
-    transform: rotate(-14deg);
+    width: 80px;
+    height: 30px;
+    transform: rotate(14deg);
   }
   .container .myHeader .title {
     font-weight: 500;
     font-size: 25px;
-    border-bottom: 10px solid #f74d19;
+    border-bottom: 4px solid #f74d19;
   }
   /* End Header */
 }
@@ -174,11 +175,14 @@ li {
   }
   /* Start Header */
   .container .myHeader .logo {
-    height: 80px;
-    transform: rotate(-14deg);
+    width: 60px;
+    height: 25px;
+    transform: rotate(14deg);
   }
   .container .myHeader .title {
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: 4px solid #f74d19;
   }
   /* End Header */
 }

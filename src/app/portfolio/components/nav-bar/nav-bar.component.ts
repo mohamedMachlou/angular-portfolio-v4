@@ -14,6 +14,11 @@ export class NavBarComponent {
     this.select = name;
     this.showMenu.set(false);
     console.log(name);
+    document.getElementById(name)?.scrollIntoView({
+      behavior: 'smooth', // or 'auto'
+      block: 'start', // or 'end', 'center', 'nearest'
+      inline: 'nearest', // or 'start', 'center', 'end'
+    });
   }
 
   /// Show  Menu

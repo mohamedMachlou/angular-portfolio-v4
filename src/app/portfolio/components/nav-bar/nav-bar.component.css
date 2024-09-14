@@ -48,13 +48,13 @@
   border-bottom-right-radius: 4px;
 }
 .container .nav .logo {
-  height: 90px;
+  height: 100px;
   margin-top: 20px;
   margin-left: 20px;
   transition: 0.5s ease;
 }
 .container .nav .logo:hover {
-  transform: translateY(20px);
+  transform: translateY(15px);
 }
 .container .nav .line-menu {
   /* width: 40%; */
@@ -227,8 +227,9 @@
     font-size: 20px;
   }
   .container .nav .logo {
-    height: 50px;
+    height: 70px;
     margin-left: 10px;
+    margin-bottom: 20px;
   }
   .container .nav {
     width: 100%;
