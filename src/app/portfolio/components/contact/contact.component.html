@@ -115,13 +115,19 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="option">Option<span>*</span></label>
+        <label for="option">Industry<span>*</span></label>
         <select id="option" formControlName="option">
-          <option value="" disabled selected>Choose your option</option>
+          <option value="" disabled selected>Choose Your Industry</option>
           <option *ngFor="let option of options" [value]="option">
             {{ option }}
           </option>
         </select>
+        <div class="alert-success" *ngIf="option?.valid && option?.touched">
+          valide.
+        </div>
+        <div class="alert-danger" *ngIf="option?.invalid && option?.touched">
+          Industry is required.
+        </div>
       </div>
       <div class="form-group">
         <label for="phonenumber">Phone Number<span>*</span> </label>

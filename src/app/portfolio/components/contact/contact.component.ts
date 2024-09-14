@@ -5,6 +5,7 @@
 /* /////////////////////////////////////////////////////////// */
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   selector: 'contact',
@@ -94,7 +95,29 @@ export class ContactComponent {
 
   // submit method
 
-  submit() {
+  public submit() {
     console.log(this.form.value);
+    // console.log(f.value);
+    // (this.contact.name = f.value.fullname),
+    //   (this.contact.email = f.value.email),
+    //   (this.contact.message = f.value.message),
+
+    console.log(this.form.value);
+
+    emailjs
+      .send(
+        'service_o70brhc',
+        'template_f49n9n8',
+        this.form.value,
+        '7ALyQd9YWgjeyilwM'
+      ) // Replace with your EmailJS service ID, template ID, and public key
+      .then(
+        (result: EmailJSResponseStatus) => {
+          console.log('SUCCESS!', result.status, result.text);
+        },
+        (error: EmailJSResponseStatus) => {
+          console.log('FAILED...', error.status, error.text);
+        }
+      );
   }
 }
