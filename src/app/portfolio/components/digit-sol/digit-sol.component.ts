@@ -6,11 +6,9 @@ import { Component, OnInit, signal } from '@angular/core';
   styleUrl: './digit-sol.component.css',
 })
 export class DigitSolComponent implements OnInit {
-  interval = 160;
-
   //// Manage Services Animation Variables
   cercleNb = signal<number>(1);
-  serviceInterval = 2000;
+  serviceInterval = 1000;
 
   ngOnInit(): void {
     this.servicesAnim();

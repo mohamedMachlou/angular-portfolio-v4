@@ -52,7 +52,7 @@ export class ContactComponent {
       Validators.required,
       Validators.minLength(6),
       Validators.maxLength(40),
-      Validators.pattern('[a-zA-Z0-9_.]+@[a-zA-Z]+.[a-zA-Z]+'),
+      Validators.pattern('[a-zA-Z0-9_.]+@[a-zA-Z]+.[a-zA-Z]{3-8}'),
     ]),
     state: new FormControl('', [
       Validators.required,

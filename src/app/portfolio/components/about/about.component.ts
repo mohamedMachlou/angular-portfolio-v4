@@ -39,4 +39,13 @@ export class AboutComponent implements OnInit {
       }, this.interval);
     }
   }
+
+  /// Switch Method
+  switch(name: string) {
+    document.getElementById(name)?.scrollIntoView({
+      behavior: 'smooth', // or 'auto'
+      block: 'start', // or 'end', 'center', 'nearest'
+      inline: 'nearest', // or 'start', 'center', 'end'
+    });
+  }
 }

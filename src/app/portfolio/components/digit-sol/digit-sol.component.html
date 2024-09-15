@@ -7,59 +7,125 @@
   <!-- End Header -->
   <div class="digit-sol">
     <div class="infos">
-      <div class="service">
-        <div
-          [ngClass]="{
-            'active-service': this.cercleNb() == 1,
-            'deactive-service': this.cercleNb() != 1
-          }"
-        >
-          Website Design & Development
+      <div
+        [ngClass]="{
+          'active-service': this.cercleNb() == 1,
+          'deactive-service': this.cercleNb() != 1
+        }"
+        class="service"
+      >
+        <div>
+          <div class="img">
+            <img
+              *ngIf="this.cercleNb() == 1"
+              src="../../../../assets/images/digit-sol-icon/design-icon.svg"
+              alt=""
+            />
+            <img
+              *ngIf="this.cercleNb() != 1"
+              src="../../../../assets/images/digit-sol-icon/design.svg"
+              alt=""
+            />
+          </div>
+          <div class="title">Website Design & Development</div>
         </div>
       </div>
-      <div class="service">
-        <div
-          [ngClass]="{
-            'active-service': this.cercleNb() == 2,
-            'deactive-service': this.cercleNb() != 2
-          }"
-        >
-          Search Engine Optimization
+      <div
+        [ngClass]="{
+          'active-service': this.cercleNb() == 2,
+          'deactive-service': this.cercleNb() != 2
+        }"
+        class="service"
+      >
+        <div>
+          <div class="img">
+            <img
+              *ngIf="this.cercleNb() == 2"
+              src="../../../../assets/images/digit-sol-icon/seo-icon.svg"
+              alt=""
+            />
+            <img
+              *ngIf="this.cercleNb() != 2"
+              src="../../../../assets/images/digit-sol-icon/seo.svg"
+              alt=""
+            />
+          </div>
+          <div class="title">Search Engine Optimization</div>
         </div>
       </div>
-      <div class="service">
-        <div
-          [ngClass]="{
-            'active-service': this.cercleNb() == 3,
-            'deactive-service': this.cercleNb() != 3
-          }"
-        >
-          Facebook Advertising Services
+      <div
+        id="industries"
+        [ngClass]="{
+          'active-service': this.cercleNb() == 3,
+          'deactive-service': this.cercleNb() != 3
+        }"
+        class="service"
+      >
+        <div>
+          <div class="img">
+            <img
+              *ngIf="this.cercleNb() == 3"
+              src="../../../../assets/images/digit-sol-icon/face-icon.svg"
+              alt=""
+            />
+            <img
+              *ngIf="this.cercleNb() != 3"
+              src="../../../../assets/images/digit-sol-icon/face.svg"
+              alt=""
+            />
+          </div>
+          <div class="title">Facebook Advertising Services</div>
         </div>
       </div>
-      <div id="industries" class="service">
-        <div
-          [ngClass]="{
-            'active-service': this.cercleNb() == 4,
-            'deactive-service': this.cercleNb() != 4
-          }"
-        >
-          Google Business Profile
+      <div
+        [ngClass]="{
+          'active-service': this.cercleNb() == 4,
+          'deactive-service': this.cercleNb() != 4
+        }"
+        class="service"
+      >
+        <div>
+          <div class="img">
+            <img
+              *ngIf="this.cercleNb() == 4"
+              src="../../../../assets/images/digit-sol-icon/g-business-icon.svg"
+              alt=""
+            />
+            <img
+              *ngIf="this.cercleNb() != 4"
+              src="../../../../assets/images/digit-sol-icon/g-business.svg"
+              alt=""
+            />
+          </div>
+          <div class="title">Google Business Profile</div>
         </div>
       </div>
-      <div class="service">
-        <div
-          [ngClass]="{
-            'active-service': this.cercleNb() == 5,
-            'deactive-service': this.cercleNb() != 5
-          }"
-        >
-          Contact form tracking
+      <div
+        [ngClass]="{
+          'active-service': this.cercleNb() == 5,
+          'deactive-service': this.cercleNb() != 5
+        }"
+        class="service"
+      >
+        <div>
+          <div class="img">
+            <img
+              *ngIf="this.cercleNb() == 5"
+              src="../../../../assets/images/digit-sol-icon/design-icon.svg"
+              alt=""
+            />
+            <img
+              *ngIf="this.cercleNb() != 5"
+              src="../../../../assets/images/digit-sol-icon/design.svg"
+              alt=""
+            />
+          </div>
+          <div class="title">Contact form tracking</div>
         </div>
       </div>
     </div>
-    <div class="inter inter2">
-      <img src="../../../../assets/images/gray-biege.svg" alt="" />
-    </div>
+  </div>
+  <div class="inter inter2">
+    <img src="../../../../assets/images/gray-biege.svg" alt="" />
   </div>
 </div>

@@ -1,44 +1,73 @@
 /* Start Services */
 .container .digit-sol {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #2f3645;
 }
 .container .digit-sol .infos {
-  width: 100%;
-  height: auto;
-  background-color: #2f3645;
+  width: 60%;
+  gap: 20px;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .container .digit-sol .infos .service {
-  width: 60%;
-  height: 80px;
-  font-weight: 700;
-  font-size: 40px;
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .digit-sol .infos .service .img {
+  width: 320px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 20px;
+}
+.container .digit-sol .infos .service .img img {
+  width: 80px;
+}
+.container .digit-sol .infos .service .title {
+  width: 320px;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 .active-service {
-  padding: 10px;
+  background-color: #fff6dc;
+  border: 4px solid var(--orange-color);
   color: var(--orange-color);
   outline: none;
-  /* color: #f74d19; */
 }
 .deactive-service {
+  background-color: #b7b7b7;
+  border: 4px solid #434343;
   color: #3a4152;
 }
 .inter2 {
   background-color: #fff6dc;
 }
 /* Start Media Queries */
-/* Large devices (desktops, 1200px and down) */
-@media (max-width: 1200px) {
+/* Small devices (Portrait phones, 1700px and down) */
+@media (max-width: 1700px) {
+  .container .digit-sol .infos {
+    width: 80%;
+  }
+}
+/* Large devices (desktops, 1275px and down) */
+@media (max-width: 1275px) {
+  .container .digit-sol .infos {
+    width: 95%;
+  }
 }
 /* Large devices (desktops, 992px and down) */
 @media (max-width: 992px) {
   .container .digit-sol .infos .service {
-    width: 85%;
+    width: 45%;
     font-weight: 700;
     font-size: 25px;
   }
@@ -57,17 +86,16 @@
 /* Large devices (desktops, 768px and down) */
 @media (max-width: 768px) {
   .container .digit-sol .infos .service {
-    width: 95%;
-    font-weight: 600;
-    font-size: 20px;
+    width: 65%;
   }
 }
 /* Large devices (desktops, 450px and down) */
 @media (max-width: 450px) {
+  .container .digit-sol .infos {
+    width: 100%;
+  }
   .container .digit-sol .infos .service {
     width: 95%;
-    font-weight: 600;
-    font-size: 20px;
   }
   /* Start Header */
   /* .container .myHeader .logo {
